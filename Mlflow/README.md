@@ -7,12 +7,12 @@
 
 1. Устанавливаем и настраиваем conda
 2. Устанавливаем и настраиваем python3
-3. Устанавливаем и настраиваем mlflow 
+3. Устанавливаем и настраиваем mlflow (Важно! Модель старая, поэтому лучше всего устанавливать mlflow 1 поколения, например, версию 1.20, и не скупитесь на память для инструмента, не меньше 6-8 GB должно быть только для него)
 4. Настраиваем переменные:
 export MLFLOW_TRACKING_URI=http://localhost
 export MLFLOW_S3_ENDPOINT_URL=http://localhost:9000
 5. Настраиваем MinIO
-6. Берём модель отсюда https://github.com/sachua/mlflow-docker-compose 
+6. Берём модель отсюда [https://github.com/sachua/mlflow-docker-compose](https://github.com/simbakot/mlflow_example ) 
 7. Проводим её обучение:
 mlflow models serve -m S3://mlflow/0/98bdf6ec158145908af39f86156c347f/artifacts/model -p 1234
 
