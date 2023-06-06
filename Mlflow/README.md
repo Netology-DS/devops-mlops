@@ -12,7 +12,7 @@
 export MLFLOW_TRACKING_URI=http://localhost
 export MLFLOW_S3_ENDPOINT_URL=http://localhost:9000
 5. Настраиваем MinIO
-6. Берём модель отсюда [https://github.com/sachua/mlflow-docker-compose](https://github.com/simbakot/mlflow_example ) 
+6. Берём модель отсюда [https://github.com/simbakot/mlflow_example]
 7. Проводим её обучение:
 mlflow models serve -m S3://mlflow/0/98bdf6ec158145908af39f86156c347f/artifacts/model -p 1234
 
